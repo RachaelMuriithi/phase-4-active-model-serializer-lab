@@ -10,6 +10,15 @@ class PostsController < ApplicationController
     post = Post.find(params[:id])
     render json: post
   end
+  # def post
+  #   post = Post.find(params[:id])
+  #   render json: post, serializer: AuthorPostSerializer
+  # end
+
+  # def posts
+  #   posts = Post.all
+  #   render json: posts, each_serializer: AuthorPostSerializer
+  # end
 
   private
 
